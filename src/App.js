@@ -24,7 +24,7 @@ import TitleDescription from './components/titleDescription'
 import networks from './brownie-config.json'
 import {sx_header,sx_card} from './stile'
 
-import { SumerObserver } from "dappsonar";
+import { SumerObserver } from "sumer-sdk";
 
 function App() {
   const { active, chainId, account, library: provider } = useWeb3React();

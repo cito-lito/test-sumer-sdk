@@ -5,7 +5,7 @@ import IPoolAddressProvider from "./brownie_build/interfaces/IPoolAddressesProvi
 import IPool from "./brownie_build/interfaces/IPool.json"
 import IERC20 from "./brownie_build/interfaces/IERC20.json"
 import IWETHGateway from "./brownie_build/interfaces/IWETHGateway.json"
-import { SumerObserver } from "dappsonar";
+import { SumerObserver } from "sumer-sdk";
 
 const SECONDS_PER_YEAR = 31536000
 const RAY = 10 ** 27

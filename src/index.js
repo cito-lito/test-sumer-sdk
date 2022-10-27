@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import { Web3ReactProvider } from "@web3-react/core";
 
 
-import { SumerObserver, Client } from "dappsonar";
+import { SumerObserver, Client } from "sumer-sdk";
 const key = '372eedbc-d6a0-4ee1-b53a-9ddcf71f22ac'
 
 const getLibrary = (provider) => {
