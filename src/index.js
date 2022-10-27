@@ -20,6 +20,7 @@ const getLibrary = (provider) => {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
   <Web3ReactProvider getLibrary={getLibrary}>
     <App />
   </Web3ReactProvider>

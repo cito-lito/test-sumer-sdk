@@ -28,7 +28,6 @@ import { SumerObserver } from "sumer-sdk";
 
 function App() {
   const { active, chainId, account, library: provider } = useWeb3React();
-  console.log(provider)
   const [inputEthDeposit, setInputEthDeposit] = useState("");
   const [inputEthWithdraw, setInputEthWithdraw] = useState("");
   function clearInputs() {
@@ -115,7 +114,6 @@ function App() {
 
   return (
 <React.Fragment>
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
       <AppBar position="static" elevation={0}
