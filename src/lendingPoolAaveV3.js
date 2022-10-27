@@ -260,7 +260,6 @@ export async function withdrawFromAave(assetAddr, amount, addrTo, provider) {
 export async function depositETHtoAave(onBehalfOf, referralCode = 0, provider, amount) {
     try {
         const pool = await getPoolContract(provider);
-        console.log("pool", pool)
         const contract = SumerObserver.Contract(networks.networks.goerli.wethGateway, IWETHGateway.abi, provider.getSigner(),provider.apikey,provider.chainId)
         const tx = await contract.depositETH(pool.address, onBehalfOf, referralCode, { value: amount })
         return await tx.wait()
